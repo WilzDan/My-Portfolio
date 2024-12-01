@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/logo porfolio.jpg" />
+  <title>Portfolioku</title>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/bukanmaennnnnnn.css"/>
+</head>
+<body class="font-sans bg-gray-100 text-white">
+  <div id="overlay">
+    <h1 id="overlay-typing"></h1>
+  </div>
+
+  <!-- Main Content Section -->
+  <div id="main-content" class="hidden">
+    <!-- Navbar -->
+  <nav id="header" class="sticky w-full z-30 top-0 bg-blue-700">
+    <div class="container mx-auto flex flex-wrap items-center justify-between p-2">
+      <!-- Logo -->
+      <a href="#main-content" id="portfolio-link" class="text-xl font-bold">My Portfolio</a>
+      
+      <!-- Hamburger Icon (Visible on both mobile and desktop) -->
+      <button id="nav-toggle" class="p-2 ml-auto mr-4"> <!-- Tambahkan ml-auto mr-4 di sini -->
+        <svg class="h-6 w-6 fill-current text-white" viewBox="0 0 20 20">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+
+      <!-- Navbar Links (Initially hidden for both mobile and desktop) -->
+      <div class="hidden flex-col lg:flex-row lg:flex lg:items-center space-y-2 lg:space-y-0 lg:space-x-4" id="nav-content">
+        <a href="#about" class="py-2 px-3 bg-blue-700 text-white font-bold slide-down">About me</a>
+        <a href="#Expertise" class="py-2 px-3 hover:bg-gray-700 hover:text-white slide-down" style="transition-delay: 100ms;">Expertise</a>
+        <a href="#galery" class="py-2 px-3 hover:bg-gray-700 hover:text-white slide-down" style="transition-delay: 100ms;">Galery</a>
+        <a href="https://github.com/WilzDan" target="_blank">
+          <button class="py-2 px-6 text-white font-bold border-2 border-white rounded-full shadow-lg hover:bg-white hover:text-black transition duration-300 slide-down" style="transition-delay: 300ms;">
+            Github
+          </button>
+        </a>        
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section id="hero" class="relative w-full h-screen md:h-[600px] flex flex-col md:flex-row items-center bg-white text-black overflow-hidden">
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-4">
+    <!-- Text Box (1/3 width on desktop) -->
+    <div class="w-full md:w-1/2 pr-4 text-center md:text-left">
+      <h1 id="typing-text" class="text-2xl sm:text-xl md:text-4xl font-sans mb-4 typing leading-relaxed md:leading-normal">
+        <!-- animasi typing teks ada di js -->
+      </h1>
+      <p>
+        This website is a place to display various works and information about myself. Hope you enjoy your visit here!
+      </p>
+    </div>
+
+    <!-- Image Box (1/4 width on desktop) -->
+    <div class="w-full md:w-1/2 flex justify-center mt-4 md:mt-0 md:pl-6">
+      <img src="/assets/hero1.jpg" alt="Foto Saya" class="w-3/4 md:w-full rounded-lg bounce" />
+    </div>
+  </div>
+</section>
+
+  <!--about me-->
+<!-- About Me Section -->
+<section id="about" class="w-full py-16 bg-black text-white">
+  <div class="container mx-auto px-4 text-center">
+    <!-- Section Title -->
+    <h2 class=" text-3xl font-bold mb-4 text-center zoom-text">About Me</h2>
+    
+    <!-- Profile Image - Centered -->
+    <div class="w-full flex justify-center mb-6">
+      <img src="/assets/wijdanpp2.jpg" alt="Foto Profil" class="w-1/3 md:w-1/4 rounded-full shadow-lg" />
+    </div>
+
+    <!-- Description Text with justify alignment -->
+    <div class="w-full md:w-3/4 lg:w-2/3 mx-auto text-lg leading-relaxed text-justify">
+      <p class="rainbow-text">
+        Hello! My name is Wijdan Amjad Humaid and I'm a <span class="animated-skill">Web developer</span>. My address is in the city of Karawang, Indonesia. I graduated with a <span class="stti">Bachelor of Science</span> at the <span class="stti">Sony Sugema Information Technology College</span>. With a <span class="stti">cumlaude</span> degree, I am someone who is professional and disciplined in carrying out my duties or work. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--end about-->
+ 
+
+
+<!--Expertise-->
+<section id="Expertise">
+<div  class="bg-gray-700 container mx-auto px-4 py-12 flex flex-col items-center">
+  <h1 class="text-center text-3xl font-semibold mb-8 zoom-text1">Expertise</h1>
+
+  <h2 class="text-center text-2xl font-medium mb-6">Technologies</h2>
+
+  <!-- Small Logo (1:1) -->
+  <div class="grid grid-cols-5 gap-3 sm:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5">
+    <!-- Logo List for 1:1 (Small Logos) -->
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/html.png" alt="HTML">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/css.png" alt="CSS">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/js.png" alt="JavaScript">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/php.png" alt="PHP">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/webpack.png" alt="Webpack">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/tailwind.png" alt="Tailwind">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/bootstrap.png" alt="Bootstrap">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/astro.png" alt="Astro">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/npm.png" alt="NPM">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/nodejs.png" alt="Node.js">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/laravel.png" alt="Laravel">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/solidjs.png" alt="Solid.js">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/react.png" alt="React">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/react-native.png" alt="React Native">
+    </div>
+    <div class="logo small-logo" onclick="animateLogo(this)">
+      <img src="assets/composer.png" alt="Composer">
+    </div>
+  </div>
+
+
+  <!-- Large Logo (18:9) -->
+  <div class="grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+    <!-- Logo List for 18:9 (Long Logos) -->
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/reefjs.png" alt="Reef.js">
+    </div>
+    
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/express.png" alt="Express">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/fastify.png" alt="Fastify">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/bulma.png" alt="Bulma">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/mysql.png" alt="MySQL">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/postgresql.png" alt="PostgreSQL">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/mongodb.png" alt="MongoDB">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/supabase.png" alt="Supabase">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/google-cloud.png" alt="Google Cloud">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/kubernetes.png" alt="Kubernetes">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/docker.png" alt="Docker">
+    </div>
+    <div class="logo large-logo" onclick="animateLogo(this)">
+      <img src="assets/ngrok.png" alt="Ngrok">
+    </div>
+  </div>
+
+  <h2 class="text-center text-2xl font-medium pt-10">Experience</h2>
+  <div class="w-full md:w-3/4 lg:w-2/3 mx-auto text-lg leading-relaxed text-justify">
+    <p class="mt-4 pt-4 rainbow-text">
+      <span class="animated-skill">September 2024 - December 2024.</span>
+    </p>
+    <p class="mt-2 rainbow-text">
+      has participated in<span class="stti"> the program Kemendikbud</span>, namely <span class="stti">the Independent Campus program</span> - Batch 8 Teaching Campus at SMKN 1 Cilamaya.
+    </p>
+    <p class="mt-4 pt-4 rainbow-text">
+      <span class="animated-skill">September 2024 - December 2024</span>
+    </p>
+    <p class="mt-2 rainbow-text">
+      has been a general and private mentor in basic Microsoft learning (Teams, Word, Excel, and Power Point) for junior high school and high school students in remote areas of Cilamaya.
+    </p>
+    <p class="mt-4 pt-4 rainbow-text">
+      <span class="animated-skill">October 2024 - December 2024</span>
+    </p>
+    <p class="mt-2 rainbow-text">
+      was once an assistant implementer as well as part of the vice principal curriculum team and committee chair in the zero waste food and zero emission program at SMKN 1 Cilamaya.
+    </p>
+  </div>
+</div>
+
+</section>
+<!--end Expertise-->
+<!--galery-->
+<section id="galery" class="mb-12">
+  <h2 class="text-3xl font-bold mb-14 mt-14 text-center zoom-text py-4" style="padding-bottom: 0.25rem;">Galery</h2>
+
+  <!-- Gallery Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-container"></div>
+</div>
+
+<!-- Lightbox dan close x-->
+<div class="lightbox" id="lightbox">
+  <i class="fi fi-rr-cross-circle close-btn" id="close-btn"></i>
+  <img id="lightbox-image" src="" alt="">
+</div>
+</section>
+<!--end Galery-->
+<!--div penutup-->
+</div>
+<footer class="bg-blue-700 text-white py-4">
+  <div class="container mx-auto px-4">
+    <!-- Kontainer 1: Portofolioku dan Motivasi -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-semibold mb-4">My Portfolio</h2><script src="assets/script.js"></script>
+      <p class="text-sm text-gray-200">"Berkomitmen untuk tumbuh dan memberikan kontribusi melalui karya yang menginspirasi."</p>
+    </div>
+    
+    <!-- Kontainer 2: Follow Me - Sosial Media -->
+    <div class="text-center">
+      <h3 class="text-xl font-semibold mb-4">Follow Me on Social Media</h3>
+      <div class="flex justify-center space-x-6">
+        <a href="https://wa.me/081213479167" target="_blank">
+          <img src="/assets/whatsapp.png" alt="WhatsApp" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+        <a href="https://www.instagram.com/wijdancoolz/profilecard/?igsh=MXNvZGxnZ3Q1ZHloNA==" target="_blank">
+          <img src="/assets/instagram.png" alt="Instagram" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+        <a href="https://www.facebook.com/share/1BnoHWjjmp/" target="_blank">
+          <img src="/assets/facebook.png" alt="Facebook" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+        <a href="https://t.me/WijdanCoolz" target="_blank">
+          <img src="/assets/telegram.png" alt="Telegram" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+        <a href="https://youtube.com/@wijdanamjadhumaid?si=P1bVznKMF7_F5C9F" target="_blank">
+          <img src="/assets/youtube.png" alt="YouTube" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+        <a href="https://www.linkedin.com/in/wijdan-amjad-humaid-78a60433b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <img src="/assets/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+        <a href="#" target="_blank">
+          <img src="/assets/githubb.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-75 transition">
+        </a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 text-center text-gray-200">
+      <p>&copy; 2024 Wijdan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+      // Animasi Ketikan
+      const overlayText = "Hai👋, welcome to my website portfolio!";
+    let index = 0;
+
+    function typeOverlayText() {
+      const typingElement = document.getElementById("overlay-typing");
+      
+      if (index < overlayText.length) {
+        typingElement.textContent += overlayText.charAt(index);
+        index++;
+        setTimeout(typeOverlayText, 100);
+      } else {
+        setTimeout(() => {
+          document.getElementById("overlay").style.display = "none";
+          document.getElementById("main-content").classList.remove("hidden");
+        }, 1000);
+      }
+    }
+
+    window.onload = typeOverlayText;
+
+    //overlayy animasi ketikan end
+
+//buat slide down up portofolioku
+    const portfolioLink = document.getElementById('portfolio-link');
+
+    portfolioLink.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      portfolioLink.classList.add('show');
+
+      setTimeout(() => {
+        portfolioLink.classList.remove('show');
+        document.querySelector('#hero').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 500);
+    });
+
+//buat sembunyikan navbar 
+    document.getElementById("nav-toggle").addEventListener("click", function () {
+      const navContent = document.getElementById("nav-content");
+      navContent.classList.toggle("hidden");
+
+        if (!navContent.classList.contains("hidden")) {
+        navContent.querySelectorAll('.slide-down').forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add("show");
+          }, index * 100);
+        });
+      } else {
+        navContent.querySelectorAll('.slide-down').forEach(item => {
+          item.classList.remove("show");
+        });
+      }
+    });
+//end sembunyikan navbar
+//auto scrolling
+document.querySelectorAll('#nav-content a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const targetID = this.getAttribute('href');
+      const targetSection = document.querySelector(targetID);
+
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+//end auto scrolling
+//mulai animasi ketikan
+const texts = [
+    "Hai👋, welcome to my website portfolio!.",
+    "Nice To Meet You😊.",
+    "Can I Help You?🤔."
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingSpeed = 100;
+  const deleteSpeed = 50;
+  const pauseDuration = 1000;
+
+  function type() {
+    const typingText = document.getElementById("typing-text");
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+      typingText.textContent = currentText.substring(0, charIndex--);
+      if (charIndex < 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(type, deleteSpeed);
+      }
+    } else {
+      typingText.textContent = currentText.substring(0, charIndex++);
+      if (charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(type, pauseDuration);
+      } else {
+        setTimeout(type, typingSpeed);
+      }
+    }
+  }
+
+  // Mulai animasi mengetik
+  type();
+
+  //galery
+  const galleryData = [
+      { src: 'assets/unipress.jpg', title: 'PT Unipress' },
+      { src: 'assets/g1.jpg', title: 'Kampus Mengajar Batch 8 - Evaluasi BBPMPV BMTI' },
+      { src: 'assets/g2.jpg', title: 'Pembuatan & Penyusunan Program Kerja Berupa Pojok Baca' },
+      { src: 'assets/g3.jpg', title: 'Puncak Acara Moon Festival Guna Menggaungkan Literasi & Numerasi' },
+      { src: 'assets/g4.jpg', title: 'Foto Bersama Ketua Komite SMKN 1 Cilamaya' },
+      { src: 'assets/g5.jpg', title: 'Lulusan Tahun 2021 - Nihayatul Amal Purwasari' },
+      { src: 'assets/g6.jpg', title: 'Penguatan Literasi, Numerasi, dan Sains' },
+      { src: 'assets/g7.jpg', title: 'Rapat Komite' },
+      { src: 'assets/g8.jpg', title: 'Kelas Jurusan Teknik Informatika' },
+      { src: 'assets/g9.jpg', title: 'Projek Penguatan Profil Pelajar Pancasila' },
+      { src: 'assets/g10.jpg', title: 'Desiminasi & Sosialisasi Pemagangan & Special Worker ke Jepang' }
+    ];
+
+    const galleryContainer = document.getElementById('gallery-container');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const closeBtn = document.getElementById('close-btn');
+
+    galleryData.forEach(item => {
+      const galleryItem = document.createElement('div');
+      galleryItem.classList.add('gallery-item', 'relative');
+
+      galleryItem.innerHTML = `
+        <img src="${item.src}" alt="${item.title}" class="w-full h-auto rounded-lg shadow-lg cursor-pointer">
+        <div class="title">${item.title}</div>
+      `;
+
+      galleryItem.querySelector('img').addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImage.src = item.src;
+      });
+
+      galleryContainer.appendChild(galleryItem);
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+//end galery
+
+//Expertise js
+function animateLogo(element) {
+      if (element.classList.contains('small-logo')) {
+        element.classList.add('fast-rotate');
+      } else {
+        element.classList.add('bouncing');
+      }
+      
+      setTimeout(() => {
+        element.classList.remove('fast-rotate');
+        element.classList.remove('bouncing');
+      }, 5000);
+    }
+//end Expertise
+</script>
+</body>
+</html>
